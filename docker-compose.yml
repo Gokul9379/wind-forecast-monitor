@@ -1,0 +1,18 @@
+# Start everything with:  docker compose up --build
+#   frontend -> http://localhost:3000
+#   API docs -> http://localhost:8000/docs
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # the data snapshot is stored on your machine, so it is downloaded only once
+      - ./backend/data:/app/data
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

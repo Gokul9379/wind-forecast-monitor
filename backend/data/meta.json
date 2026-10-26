@@ -1,0 +1,11 @@
+{
+  "source": "elexon",
+  "description": "Elexon BMRS datasets FUELHH (fuelType=WIND) and WINDFOR.",
+  "window_start": "2026-01-01T00:00:00+00:00",
+  "window_end": "2026-02-01T00:00:00+00:00",
+  "max_horizon_hours": 48,
+  "forecast_retention_hours": 72,
+  "actual_rows": 1488,
+  "forecast_rows": 14383,
+  "saved_at": "2026-10-26T10:15:42Z"
+}
